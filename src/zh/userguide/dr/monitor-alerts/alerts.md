@@ -54,5 +54,5 @@
 
 处理后对应状态信息会进行改变：
 
-![monitor-alerthistory-failback-action-hover-mark-all-read](./images/alerts-failback-2.png)
+![monitor-alerthistory-failback-action-hover-mark-all-read](./images/monitor-alerthistory-failback-action-hover-mark-all-read.png)
 

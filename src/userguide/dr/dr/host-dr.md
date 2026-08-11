@@ -1028,7 +1028,7 @@ Click **"Source Sync Settings"** to configure source-side parameters for backup 
 
 > This configuration applies to Linux Agent, Windows Agent, and Agentless modes. The interface layout or configuration location may vary slightly across different modes. Please refer to the actual interface.
 
-![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings-1.png)
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
 | Parameter                        | Setting   | Description                                                                                                                                                         |
 | -------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -1044,7 +1044,7 @@ Click **"Source Sync Settings"** to configure source-side parameters for backup 
 
 > This configuration applies to Agentless mode. The interface layout or configuration location may vary slightly across different modes. Please refer to the actual interface.
 
-![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings-2.png)
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
 | Parameter                    | Setting              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | ---------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1057,7 +1057,7 @@ Click **"Source Sync Settings"** to configure source-side parameters for backup 
 
 > This configuration applies to Linux Agent, Windows Agent, and Agentless modes. The interface layout or configuration location may vary slightly across different modes. Please refer to the actual interface.
 
-![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings-3.png)
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
 | Parameter        | Setting | Description                                                                                                                                                       |
 | ---------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1069,7 +1069,7 @@ Click **"Source Sync Settings"** to configure source-side parameters for backup 
 
 > This configuration applies to Linux Agent and Windows Agent modes. The interface layout or configuration location may vary slightly across different modes. Please refer to the actual interface.
 
-![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings-4.png)
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
 | Parameter                                  | Setting | Description                                                                                                                                               |
 | ------------------------------------------ | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1080,7 +1080,7 @@ Click **"Source Sync Settings"** to configure source-side parameters for backup 
 
 > This configuration applies to Linux Agent mode. The interface layout or configuration location may vary slightly across different modes. Please refer to the actual interface.
 
-![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings-5.png)
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
 | Parameter                  | Setting | Description                                                                                                                                                       |
 | -------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1092,7 +1092,7 @@ Click **"Source Sync Settings"** to configure source-side parameters for backup 
 
 > This configuration applies to Windows Agent mode. The interface layout or configuration location may vary slightly across different modes. Please refer to the actual interface.
 
-![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings-6.png)
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
 | Parameter                    | Setting               | Description                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ---------------------------- | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

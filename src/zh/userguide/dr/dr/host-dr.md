@@ -1032,7 +1032,7 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 > 该配置项适用于 Linux Agent、Windows Agent 和 Agentless 三种模式。不同模式下，界面布局或配置位置可能略有差异，请以实际界面显示为准。
 
-![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings-1.png)
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
 | 参数                   | 配置 | 说明                                                         |
 | ---------------------- | ---- | ------------------------------------------------------------ |
@@ -1048,7 +1048,7 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 > 该配置项适用于Agentless 模式。不同模式下，界面布局或配置位置可能略有差异，请以实际界面显示为准。
 
-![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings-2.png)
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
 | 参数            | 配置     | 说明                                                         |
 | --------------- | -------- | ------------------------------------------------------------ |
@@ -1061,7 +1061,7 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 > 该配置项适用于 Linux Agent、Windows Agent 和 Agentless 三种模式。不同模式下，界面布局或配置位置可能略有差异，请以实际界面显示为准。
 
-![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings-3.png)
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
 | 参数     | 配置 | 说明                                                         |
 | -------- | ---- | ------------------------------------------------------------ |
@@ -1073,7 +1073,7 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 > 该配置项适用于 Linux Agent、Windows Agent 模式。不同模式下，界面布局或配置位置可能略有差异，请以实际界面显示为准。
 
-![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings-4.png)
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
 | 参数             | 配置 | 说明                                                         |
 | ---------------- | ---- | ------------------------------------------------------------ |
@@ -1084,7 +1084,7 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 > 该配置项适用于 Linux Agent模式。不同模式下，界面布局或配置位置可能略有差异，请以实际界面显示为准。
 
-![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings-5.png)
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
 | 参数                 | 配置 | 说明                                                         |
 | -------------------- | ---- | ------------------------------------------------------------ |
@@ -1096,7 +1096,7 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 > 该配置项适用于 Windows Agent模式。不同模式下，界面布局或配置位置可能略有差异，请以实际界面显示为准。
 
-![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings-6.png)
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
 | 参数              | 配置                  | 说明                                                         |
 | ----------------- | --------------------- | ------------------------------------------------------------ |
