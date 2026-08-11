@@ -60,5 +60,5 @@ On the alert messages page, you can manage alerts by marking them as "Read" or u
 
 After processing, the status will be updated:
 
-![monitor-alerthistory-failback-action-hover-mark-all-read](./images/alerts-failback-2.png)
+![monitor-alerthistory-failback-action-hover-mark-all-read](./images/monitor-alerthistory-failback-action-hover-mark-all-read.png)
 
