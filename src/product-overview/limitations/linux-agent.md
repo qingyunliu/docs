@@ -14,6 +14,7 @@
 | Kylin Linux          | v10 SP1 (v2101), SP3(v2207, v2401)   |
 | UOS                  | UOS 1050 u2a, UOS 1050 u2e |
 | OpenEuler            | 22.03.x, 24.03.x  |
+| Debian | 8.x, 9.x, 10.x, 11.x, 12.x |
 
 ::: warning
 - Note: Supported kernel versions: 2.6.32 to 7.0.0 (standard community releases).
