@@ -2,7 +2,7 @@
 
 [[toc]]
 
-> **Generated Time**: 2026-08-12 08:06:17
+> **Generated Time**: 2026-08-27 07:21:21
 > 
 > This list represents the support status in the latest release package
 > 
@@ -2014,6 +2014,35 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | SUSE Linux Enterprise Server 15 SP6 | **5.14.21-150500.53.x86_64** | RPM | 938.4 KB | `602d323e6f11771dc0feb53d2f744008` |
 | 2 | SUSE Linux Enterprise Server 15 SP6 | **6.4.0-150600.21.x86_64** | RPM | 1.04 MB | `96002f01ff7edbc1089ecc15731dfd76` |
+
+### SUSE Linux Enterprise Server 15 SP7
+| No. | OS Version | Kernel Version / Arch | Type | Size | MD5 Checksum |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.51.x86_64** | RPM | 1023.34 KB | `3a0466f5689b6aaffc00ee3c8981e393` |
+| 2 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.11.x86_64** | RPM | 1023.35 KB | `28549922d28d30accc5e5a58448e7a60` |
+| 3 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.16.x86_64** | RPM | 1.0 MB | `4e2fbe327e4773bf39f3cbeb85e5689d` |
+| 4 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.19.x86_64** | RPM | 1.0 MB | `e0fc697d2f98bbcb4ac55db3a82b3edc` |
+| 5 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.22.x86_64** | RPM | 1.0 MB | `369053a3c72724a4c3edbec35723e465` |
+| 6 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.25.x86_64** | RPM | 1.0 MB | `7d7597fca9ee5b47c93b4026f20927a7` |
+| 7 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.28.x86_64** | RPM | 1.0 MB | `3b41956723d74baa0a00fd5281bd96d3` |
+| 8 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.3.x86_64** | RPM | 1.0 MB | `5745bec35d034b18a704a3b091db4ae4` |
+| 9 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.31.x86_64** | RPM | 1.0 MB | `84f0a5b5ce2231a9c9e7ca05ba003974` |
+| 10 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.34.x86_64** | RPM | 1.0 MB | `259b5ddff4034b6bb4c2c3d66f56ec3d` |
+| 11 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.37.x86_64** | RPM | 1.0 MB | `d39dd5ad5963c4151fc916df9b7d2996` |
+| 12 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.40.x86_64** | RPM | 1.0 MB | `7e35c907f2e56e0349a219835500ec08` |
+| 13 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.45.x86_64** | RPM | 1.0 MB | `9dc12dfcd63efe30615a8eb4c888a2d5` |
+| 14 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.52.x86_64** | RPM | 1.0 MB | `5433d7c3b673431bd116ba8f11a52730` |
+| 15 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.55.x86_64** | RPM | 1.0 MB | `924e730f67be04d6c40bcea40d02851f` |
+| 16 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.6.x86_64** | RPM | 1.0 MB | `6be9bab1038d0e2dfa1b7b2076da4a37` |
+| 17 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.60.x86_64** | RPM | 1.0 MB | `03e0d01e5223578249cb2efc69dba93f` |
+| 18 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.63.x86_64** | RPM | 1.0 MB | `e76e997b67e901198b5896dd965b9ed2` |
+| 19 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.66.x86_64** | RPM | 1.0 MB | `9f121d77e7b814c5f3e23482ba15e90b` |
+| 20 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.73.x86_64** | RPM | 1.0 MB | `540af9243d09033b517034a24906616a` |
+
+### SUSE Linux Enterprise Server 16 SP0
+| No. | OS Version | Kernel Version / Arch | Type | Size | MD5 Checksum |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | SUSE Linux Enterprise Server 16 SP0 | **6.12.0-160000.6.x86_64** | RPM | 71.5 KB | `ea338095b335f3c7131b6827b2e49c58` |
 
 ## Ubuntu
 ### Ubuntu 12.04 LTS
