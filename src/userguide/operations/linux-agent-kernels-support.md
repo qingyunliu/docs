@@ -2,7 +2,7 @@
 
 [[toc]]
 
-> **Generated Time**: 2026-08-27 07:21:21
+> **Generated Time**: 2026-08-28 08:55:50
 > 
 > This list represents the support status in the latest release package
 > 
@@ -1910,6 +1910,22 @@
 | 98 | Oracle Linux 9.x | **5.15.0-9.96.5.el9uek.x86_64** | RPM | 125.87 KB | `0f874ac2de065220c3cec7142a172ddd` |
 | 99 | Oracle Linux 9.x | **6.12.0-103.40.4.3.el9uek.x86_64** | RPM | 129.1 KB | `6ed9df2c626da139d3169b13b185ad6a` |
 
+## openSUSE Leap
+### openSUSE Leap 15.6
+| No. | OS Version | Kernel Version / Arch | Type | Size | MD5 Checksum |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | openSUSE Leap 15.6 | **6.4.0-150600.23.103.x86_64** | RPM | 1021.71 KB | `fd936684f43110937f6b944c8dea1754` |
+
+### openSUSE Leap 16.0
+| No. | OS Version | Kernel Version / Arch | Type | Size | MD5 Checksum |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | openSUSE Leap 16.0 | **6.12.0-160000.35.x86_64** | RPM | 71.83 KB | `dc16e0e0807b1058afb5957b041f9fac` |
+
+### openSUSE Leap 16.1
+| No. | OS Version | Kernel Version / Arch | Type | Size | MD5 Checksum |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | openSUSE Leap 16.1 | **6.12.0-160099.47.x86_64** | RPM | 71.84 KB | `a0e28835a0f80246b40582834d23e4ee` |
+
 ## SUSE Linux Enterprise Server
 ### SUSE Linux Enterprise Server 11 SP1
 | No. | OS Version | Kernel Version / Arch | Type | Size | MD5 Checksum |
@@ -2039,10 +2055,15 @@
 | 19 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.66.x86_64** | RPM | 1.0 MB | `9f121d77e7b814c5f3e23482ba15e90b` |
 | 20 | SUSE Linux Enterprise Server 15 SP7 | **6.4.0-150700.53.73.x86_64** | RPM | 1.0 MB | `540af9243d09033b517034a24906616a` |
 
-### SUSE Linux Enterprise Server 16 SP0
+### SUSE Linux Enterprise Server 16 GA
 | No. | OS Version | Kernel Version / Arch | Type | Size | MD5 Checksum |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | SUSE Linux Enterprise Server 16 SP0 | **6.12.0-160000.6.x86_64** | RPM | 71.5 KB | `ea338095b335f3c7131b6827b2e49c58` |
+| 1 | SUSE Linux Enterprise Server 16 GA | **6.12.0-160000.6.x86_64** | RPM | 71.5 KB | `ea338095b335f3c7131b6827b2e49c58` |
+
+### SUSE Linux Enterprise Server 16 SP1
+| No. | OS Version | Kernel Version / Arch | Type | Size | MD5 Checksum |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | SUSE Linux Enterprise Server 16 SP1 | **6.12.0-160099.47.x86_64** | RPM | 952.0 KB | `29d9743885e4c48b0fe3c728161450f3` |
 
 ## Ubuntu
 ### Ubuntu 12.04 LTS
@@ -3666,14 +3687,14 @@
 | 138 | Ubuntu 24.04 LTS | **6.8.0-86-generic_amd64** | DEB | 890.43 KB | `0a91d6da3b1fe77fba76986aaaf3ef41` |
 | 139 | Ubuntu 24.04 LTS | **6.8.0-90-generic_amd64** | DEB | 890.32 KB | `0d92dee462da9c440da7e8aaa9c12850` |
 
-### Ubuntu 26
+### Ubuntu 26.04 LTS
 | No. | OS Version | Kernel Version / Arch | Type | Size | MD5 Checksum |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Ubuntu 26 | **7.0.0-14-generic_amd64** | DEB | 1003.71 KB | `dbb57d35e7fa989d6d59ff84ac37bf73` |
-| 2 | Ubuntu 26 | **7.0.0-15-generic_amd64** | DEB | 1003.95 KB | `c9b759cb61307997ffefd54a8eda334c` |
-| 3 | Ubuntu 26 | **7.0.0-22-generic_amd64** | DEB | 1004.15 KB | `0c07f4b598cf58172724efe4f53aa3b8` |
-| 4 | Ubuntu 26 | **7.0.0-27-generic_amd64** | DEB | 1003.83 KB | `ec8e62dc0bc97a05ff95b149e78d844b` |
-| 5 | Ubuntu 26 | **7.0.0-28-generic_amd64** | DEB | 1006.09 KB | `1ffdef4d31baab50f73b7f1b3cf65e2b` |
+| 1 | Ubuntu 26.04 LTS | **7.0.0-14-generic_amd64** | DEB | 1003.71 KB | `dbb57d35e7fa989d6d59ff84ac37bf73` |
+| 2 | Ubuntu 26.04 LTS | **7.0.0-15-generic_amd64** | DEB | 1003.95 KB | `c9b759cb61307997ffefd54a8eda334c` |
+| 3 | Ubuntu 26.04 LTS | **7.0.0-22-generic_amd64** | DEB | 1004.15 KB | `0c07f4b598cf58172724efe4f53aa3b8` |
+| 4 | Ubuntu 26.04 LTS | **7.0.0-27-generic_amd64** | DEB | 1003.83 KB | `ec8e62dc0bc97a05ff95b149e78d844b` |
+| 5 | Ubuntu 26.04 LTS | **7.0.0-28-generic_amd64** | DEB | 1006.09 KB | `1ffdef4d31baab50f73b7f1b3cf65e2b` |
 
 ## UOS
 ### UOS 1050a
