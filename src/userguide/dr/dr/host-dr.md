@@ -73,7 +73,7 @@ This step is applicable for DR targets using automated block storage mode or obj
 
 Log in to the console, click the top **"DR"** navigation bar, then click **"Host DR"** on the left sidebar. Next, click the **"Select Host"** menu, and click the **"Add Host"** button to add production hosts for disaster recovery.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-1.png)
+![dr-select-host-main](./images/dr-select-host-main.png)
 
 On the add host page, you can select the production platform type: source side agentless mode or source side agent mode.
 
@@ -120,7 +120,7 @@ Click the **"Select Host"** menu, then click the **"Add Host"** button to add a 
 
 If you have not added a production platform yet, you can click the **"Add New"** button to add a new VMware production platform. Refer to the steps here: [Add VMware Platform](../configuration/production-site.md#add-vmware-platform)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-2.png)
+![dr-vmware-step1-account](./images/dr-vmware-step1-account.png)
 
 From the current VMware platform, check the virtual machines that need disaster recovery backup. You can flip pages to manually select in batches, or use the search function to find hosts by name or system type for backup.
 
@@ -130,7 +130,7 @@ You can view a list of all virtual machines including their operating system, nu
 
 The **"Reload Virtual Machines"** feature allows you to reload any new hosts that do not appear in the list after being created on the platform. Click the **"Reload Virtual Machines"** button to refresh the list.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-3.png)
+![dr-vmware-step2-host](./images/dr-vmware-step2-host.png)
 
 After selecting the virtual machines, click the **"Submit"** button to add the backup virtual machines to the platform.
 
@@ -142,7 +142,7 @@ Click the **"Select Host"** menu, then click the **"Add Host"** button to add a 
 
 If you have not added a production platform yet, you can click the **"Add New"** button to add a new OpenStack production platform. Refer to the steps here: [Add OpenStack Production Platform](../configuration/production-site.md#add-openstack-platform)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-4.png)
+![dr-openstack-step1-account](./images/dr-openstack-step1-account.png)
 
 From the current OpenStack platform, check the virtual machines that need disaster recovery backup. You can flip pages to manually select in batches, or use the search function to find hosts by name or system type for backup.
 
@@ -156,8 +156,6 @@ The **"Reload Virtual Machines"** feature allows you to reload any new hosts tha
 
 After selecting the virtual machines, click the **"Submit"** button to add the backup virtual machines to the platform.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-6.png)
-
 Once added, you can check the virtual machines to be backed up, then click the **"Submit"** button to move the backup hosts to the second step for further disaster recovery configuration.
 
 #### **AWS**
@@ -166,7 +164,7 @@ Click the **"Select Host"** menu, then click the **"+ Add Host"** button to add 
 
 If you have not added a production platform yet, you can click the **"Add New"** button to add a new AWS production platform. Refer to the steps here: [Add AWS Production Platform](../configuration/production-site.md#add-aws-platform)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-7.png)
+![dr-aws-step1-account](./images/dr-aws-step1-account.png)
 
 From the current AWS platform, check the virtual machines that need disaster recovery backup. You can flip pages to manually select in batches, or use the search function to find hosts by name or system type for backup.
 
@@ -176,11 +174,9 @@ You can view a list of all virtual machines including their operating system, nu
 
 The **"Reload Virtual Machines"** feature allows you to reload any new hosts that do not appear in the list after being created on the platform. Click the **"Reload Virtual Machines"** button to refresh the list.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-8.png)
+![dr-aws-step2-account](./images/hostdisasterrecovery-hostdisasterrecovery-8.png)
 
 After selecting the virtual machines, click the **"Submit"** button to add the backup virtual machines to the platform.
-
-![](./images/hostdisasterrecovery-hostdisasterrecovery-9.png)
 
 Once added, you can check the virtual machines to be backed up, then click the **"Submit"** button to move the backup hosts to the second step for further disaster recovery configuration.
 
@@ -192,7 +188,7 @@ In the production platform list, select the already added FusionCompute platform
 
 If you have not added a production platform, click the **"Add New"** button to add a new FusionCompute production platform. Refer to the guide: [Add FusionCompute Production Platform](../configuration/production-site.md#add-fusioncompute-platform)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-10.png)
+![dr-fusioncompute-step1-account](./images/dr-fusioncompute-step1-account.png)
 
 Select the virtual machines to be backed up from the current FusionCompute platform. You can select them manually page by page or use the search function to find hosts by name or operating system.
 
@@ -210,9 +206,63 @@ In the production platform list, select the already added Oracle platform link, 
 
 If you have not added a production platform, click the **"Add New"** button to add a new Oracle production platform. Refer to the guide: [Add Oracle Production Platform](../configuration/production-site.md#add-oracle-platform)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-11.png)
+![dr-oracle-step1-account](./images/dr-oracle-step1-account.png)
 
 Select the virtual machines to be backed up from the current Oracle platform. You can select them manually page by page or use the search function to find hosts by name or operating system.
+
+When selecting backup hosts, refer to the host disk count and source sync agent information. The current number of sync agents, maximum mountable disks, mounted disks, and remaining mountable disks are displayed. You can scale the specifications and quantity of source sync agents anytime to support large-scale backups.
+
+The list shows all virtual machines including operating system, disk count, total disk capacity, and support for sync and incremental backup.
+
+The **"Reload Virtual Machines"** function: if newly created hosts on the platform do not appear in the list, click the **"Reload Virtual Machines"** button to refresh the list.
+
+#### HCS 8.0.2
+
+Click the **"Select Host"** menu, then click the **"Add Host"** button to add a host.  
+Select the production platform type, choose **"Agentless"**, and select the **"HCS 8.0.2"** platform.  
+In the production platform list, select the already added HCS 8.0.2 platform link, then click **"Next"** to proceed to the HCS 8.0.2 disaster recovery host list.
+
+If you have not added a production platform, click the **"Add New"** button to add a new HCS 8.0.2 production platform. Refer to the guide: [Add HCS 8.0.2 Production Platform](../configuration/production-site.md#add-hcs-8-0-2-platform)
+
+![dr-hcs-8.0.2-step1-account](./images/dr-hcs-8.0.2-step1-account.png)
+
+Select the virtual machines to be backed up from the current HCS 8.0.2 platform. You can select them manually page by page or use the search function to find hosts by name or operating system.
+
+When selecting backup hosts, refer to the host disk count and source sync agent information. The current number of sync agents, maximum mountable disks, mounted disks, and remaining mountable disks are displayed. You can scale the specifications and quantity of source sync agents anytime to support large-scale backups.
+
+The list shows all virtual machines including operating system, disk count, total disk capacity, and support for sync and incremental backup.
+
+The **"Reload Virtual Machines"** function: if newly created hosts on the platform do not appear in the list, click the **"Reload Virtual Machines"** button to refresh the list.
+
+#### HCS Online
+
+Click the **"Select Host"** menu, then click the **"Add Host"** button to add a host.  
+Select the production platform type, choose **"Agentless"**, and select the **"HCS Online"** platform.  
+In the production platform list, select the already added HCS Online platform link, then click **"Next"** to proceed to the HCS Online disaster recovery host list.
+
+If you have not added a production platform, click the **"Add New"** button to add a new HCS Online production platform. Refer to the guide: [Add HCS Online Production Platform](../configuration/production-site.md#add-hcs-8-0-2-platform)
+
+![dr-hcs-online-step1-account](./images/dr-hcs-online-step1-account.png)
+
+Select the virtual machines to be backed up from the current HCS HCS Online platform. You can select them manually page by page or use the search function to find hosts by name or operating system.
+
+When selecting backup hosts, refer to the host disk count and source sync agent information. The current number of sync agents, maximum mountable disks, mounted disks, and remaining mountable disks are displayed. You can scale the specifications and quantity of source sync agents anytime to support large-scale backups.
+
+The list shows all virtual machines including operating system, disk count, total disk capacity, and support for sync and incremental backup.
+
+The **"Reload Virtual Machines"** function: if newly created hosts on the platform do not appear in the list, click the **"Reload Virtual Machines"** button to refresh the list.
+
+#### Huawei Cloud
+
+Click the **"Select Host"** menu, then click the **"Add Host"** button to add a host.  
+Select the production platform type, choose **"Agentless"**, and select the **"Huawei Cloud"** platform.  
+In the production platform list, select the already added Huawei Cloud platform link, then click **"Next"** to proceed to the Huawei Cloud disaster recovery host list.
+
+If you have not added a production platform, click the **"Add New"** button to add a new Huawei Cloud production platform. Refer to the guide: [Add Huawei Cloud Production Platform](../configuration/production-site.md#add-hcs-8-0-2-platform)
+
+![dr-huawei-cloud-step1-account](./images/dr-huawei-cloud-step1-account.png)
+
+Select the virtual machines to be backed up from the current HCS Huawei Cloud platform. You can select them manually page by page or use the search function to find hosts by name or operating system.
 
 When selecting backup hosts, refer to the host disk count and source sync agent information. The current number of sync agents, maximum mountable disks, mounted disks, and remaining mountable disks are displayed. You can scale the specifications and quantity of source sync agents anytime to support large-scale backups.
 
@@ -232,11 +282,11 @@ Click the installation command below and run it on the source Linux host termina
 
 For detailed installation steps, refer to: [Click here to view](../configuration/production-site.md#linux-agent)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-12.png)
+![dr-add-host-agent](./images/dr-add-host-agent.png)
 
 After installation completes, the source host will automatically register to the platform. You can check the status of the registered host.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-13.png)
+![dr-select-host-main](./images/dr-select-host-main.png)
 
 #### **Windows**
 
@@ -248,11 +298,13 @@ Click **"Download Now"** according to the operating system version to download t
 
 For detailed installation steps, refer to: [Click here to view](../configuration/production-site.md#windows-agent)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-14.png)
+![dr-add-host-agent-windows](./images/dr-add-host-agent-windows.png)
+
+![dr-add-host-agent-windows-download](./images/dr-add-host-agent-windows-download.png)
 
 After installation completes, the source host will automatically register to the platform. You can check the status of the registered host.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-15.png)
+![dr-select-host-main](./images/dr-select-host-main.png)
 
 ### **Action**
 
@@ -260,9 +312,9 @@ After installation completes, the source host will automatically register to the
 
 Source-side parameter configuration for backup hosts.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-16.png)
+![dr-select-host-action-hover-source-sync-settings](./images/dr-select-host-action-hover-source-sync-settings.png)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-17.png)
+![dr-select-host-action-click-source-sync-settings](./images/dr-select-host-action-click-source-sync-settings.png)
 
 ##### **General Settings**
 
@@ -291,29 +343,29 @@ Source-side parameter configuration for backup hosts.
 
 #### **Modify Sync Proxy**
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-18.png)
+![dr-select-host-action-hover-modify-sync-proxy](./images/dr-select-host-action-hover-modify-sync-proxy.png)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-19.png)
+![dr-select-host-action-click-modify-sync-proxy](./images/dr-select-host-action-click-modify-sync-proxy.png)
 
 #### **Attach Tag**
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-20.png)
+![dr-select-host-action-hover-attach-tag](./images/dr-select-host-action-hover-attach-tag.png)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-21.png)
+![dr-select-host-action-click-attach-tag](./images/dr-select-host-action-click-attach-tag.png)
 
 #### **Detach Tag**
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-22.png)
+![dr-select-host-action-hover-detach-tag](./images/dr-select-host-action-hover-detach-tag.png)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-23.png)
+![dr-select-host-action-click-detach-tag](./images/dr-select-host-action-click-detach-tag.png)
 
 #### **Deregister Host**
 
 Deregister the backup host from the disaster recovery management platform.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-24.png)
+![dr-select-host-action-hover-deregister-host](./images/dr-select-host-action-hover-deregister-host.png)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-25.png)
+![dr-select-host-action-click-deregister-host](./images/dr-select-host-action-click-deregister-host.png)
 
 ## **Setup DR**
 
@@ -323,19 +375,19 @@ Log in to the console, click the top **"DR"** navigation bar, then click **"Host
 The sequence of steps in the disaster recovery configuration process may vary slightly across different cloud platforms. For example, some platforms require volume type configuration before setting up compute resources, while others do the opposite. It is recommended to follow the interface guidance of the specific cloud platform and adjust the configuration order accordingly to ensure a smooth setup.
    :::
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-26.png)
+![dr-setupdr-main](./images/dr-setupdr-main.png)
 
 ### **Block Storage**
 
 Select the storage type as "Block Storage," and follow the selected information to complete the block storage step configuration and finish the disaster recovery setup.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-27.png)
+![dr-setupdr-block-platform](./images/dr-setupdr-block-platform.png)
 
 #### **Specify DR Platform**
 
 Specify the backup host to use the "Block Storage" type for backup, and select the configuration parameter information.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-28.png)
+![dr-setupdr-block-platform](./images/dr-setupdr-block-platform.png)
 
 ##### **Storage Configuration**
 
@@ -359,21 +411,55 @@ Select the virtual machines that require disaster recovery backup from the curre
 
 > Note: The cloud sync gateway will be automatically created when adding the DR platform configuration, no manual configuration is needed. For details, refer to: Storage Configuration -- Block Storage Configuration -- Find your corresponding cloud vendor configuration method [👉Click here to view](../configuration/dr-site-configuration.md#block-storage)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-29.png)
+![dr-setupdr-block-gateway](./images/dr-setupdr-block-gateway.png)
 
 Click the **"+"** next to the corresponding disaster recovery host to assign the DR host.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-30.png)
+![dr-setupdr-block-gateway-plus](./images/dr-setupdr-block-gateway-plus.png)
 
 After completing **Specify Cloud Sync Gateway**, click **"Next"** to start **Specify Volume Type**.
+
+#### **Computing Resource Configuration**
+
+You need to configure computing resource parameters for the disaster recovery hosts, including CPU, operating system type, etc., to ensure the recovered virtual machines can run properly in the target environment.
+
+Select the virtual machines requiring disaster recovery backup. You can manually select in batches by paging through, configure CPU, operating system type, etc., or use the page buttons for batch configuration. After choosing the appropriate target boot mode, complete the setup.
+
+> Note: When the source host uses UEFI boot mode, you can select BIOS or UEFI to boot the system disk. Disks larger than 2TB cannot use BIOS boot mode.
+
+![dr-setupdr-block-computing](./images/dr-setupdr-block-computing.png)
+
+If there is a preset template matching the resource type, the system will auto-match; otherwise, manual selection is required.
+
+##### **Bulk Set Flavor**
+
+Select the required hosts, then click the **"Bulk Set Flavor"** button on the page to start batch configuration of host specifications.
+
+> Note: The currently selected hosts will be set uniformly. If unsure, please reselect.
+
+In the popup dialog, select and confirm according to the preset configuration.
+
+![dr-setupdr-block-computing-bulk-set-flavor](./images/dr-setupdr-block-computing-bulk-set-flavor.png)
+
+![dr-setupdr-block-computing-bulk-auto-match-flavor](./images/dr-setupdr-block-computing-bulk-auto-match-flavor.png)
+
+##### **Bulk Set OS Type**
+
+Select the required hosts, then click the **"Bulk Set OS Type"** button on the page to start batch configuration of host operating system types.
+
+> Note: The currently selected hosts will be set uniformly. If unsure, please reselect.
+
+In the popup dialog, choose your host operating system type.
+
+![dr-setupdr-block-computing-bulk-set-os-type](./images/dr-setupdr-block-computing-bulk-set-os-type.png)
+
+After completing **Computing Resource Configuration**, click **"Next"** to start **Network Configuration**.
 
 #### **Specify Volume Type**
 
 Users must specify the corresponding disk types (volume types) on the target cloud platform for each disk of the selected virtual machine, to ensure accurate resource mapping and successful mounting during the disaster recovery process.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-91.png)
-
-![](./images/hostdisasterrecovery-hostdisasterrecovery-92.png)
+![dr-setupdr-block-volume](./images/dr-setupdr-block-volume.png)
 
 Configure and select the target volume types for the virtual machine disks that require disaster recovery backup, ensuring proper creation and mounting of resources during the recovery process.
 
@@ -387,42 +473,6 @@ In multi-disk scenarios, be sure to manually select and set the boot disk for ea
 
 After completing **Specify Volume Type**, click **"Next"** to start **Computing Resource Configuration**.
 
-#### **Computing Resource Configuration**
-
-You need to configure computing resource parameters for the disaster recovery hosts, including CPU, operating system type, etc., to ensure the recovered virtual machines can run properly in the target environment.
-
-Select the virtual machines requiring disaster recovery backup. You can manually select in batches by paging through, configure CPU, operating system type, etc., or use the page buttons for batch configuration. After choosing the appropriate target boot mode, complete the setup.
-
-> Note: When the source host uses UEFI boot mode, you can select BIOS or UEFI to boot the system disk. Disks larger than 2TB cannot use BIOS boot mode.
-
-![](./images/hostdisasterrecovery-hostdisasterrecovery-93.png)
-
-![](./images/hostdisasterrecovery-hostdisasterrecovery-94.png)
-
-If there is a preset template matching the resource type, the system will auto-match; otherwise, manual selection is required.
-
-##### **Bulk Set Flavor**
-
-Select the required hosts, then click the **"Bulk Set Flavor"** button on the page to start batch configuration of host specifications.
-
-> Note: The currently selected hosts will be set uniformly. If unsure, please reselect.
-
-In the popup dialog, select and confirm according to the preset configuration.
-
-![](./images/hostdisasterrecovery-hostdisasterrecovery-33.png)
-
-##### **Bulk Set OS Type**
-
-Select the required hosts, then click the **"Bulk Set OS Type"** button on the page to start batch configuration of host operating system types.
-
-> Note: The currently selected hosts will be set uniformly. If unsure, please reselect.
-
-In the popup dialog, choose your host operating system type.
-
-![](./images/hostdisasterrecovery-hostdisasterrecovery-34.png)
-
-After completing **Computing Resource Configuration**, click **"Next"** to start **Network Configuration**.
-
 #### **Network Configuration**
 
 You need to configure the target network environment for the disaster recovery hosts, including private IP, public IP, security groups, MAC address, and other key parameters to ensure proper communication and access on the target platform.
@@ -431,7 +481,7 @@ The system supports both IPv4 and IPv6 networks. Please select the corresponding
 
 After selection, configure related parameters such as private IP, public IP, security groups, MAC address, etc., based on actual needs.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-35.png)
+![dr-setupdr-block-network](./images/dr-setupdr-block-network.png)
 
 ##### **IP Setting Rules**
 
@@ -440,7 +490,7 @@ After selection, configure related parameters such as private IP, public IP, sec
 | Private IP | Original IP / Specified IP / Not Specified | Original IP: system auto-recognizes NIC and assigns source host IP via DHCP. Specified IP: manually enter IP (same subnet as target subnet, immutable), system assigns via DHCP. Not Specified: system uses DHCP to auto-Allocate lP randomly. **Note: If DHCP is unavailable, system cannot auto-configure IP.** |
 | Public IP  | Not Specified / Allocate lP / Request lP **(subject to actual cloud vendor)** | Not Specified: host without elastic public IP cannot access the internet, used only in private networks or clusters. Allocate lP: assign an existing elastic public IP to the host. Request lP: automatically assign an elastic public IP with dedicated bandwidth to each host. |
 | Security Group | (According to target network configuration) | Multiple security group options based on target network configuration; subject to actual conditions.                                                   |
-|Fixed MAC | Original MAC / Fixed MAC / Not Specified | Note: MAC address modification is not supported when using cloud services.                                                                             |
+|Fixed MAC | Original MAC / Fixed MAC / Not Specified | This feature depends on the cloud platform's support for the required APIs. Because API capabilities vary across cloud platforms, this feature may not be available on all platforms. Availability is subject to the capabilities supported by the target cloud platform. |
 
 ##### **Single NIC**
 
@@ -455,7 +505,7 @@ Select the desired hosts and click the **“Bulk Set Private IP”** button on t
 
 In the pop-up dialog, choose your private IP allocation type.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-36.png)
+![dr-setupdr-block-network-bulk-set-private-ip](./images/dr-setupdr-block-network-bulk-set-private-ip.png)
 
 **Bulk Set Public IP**
 
@@ -463,7 +513,7 @@ Select the desired hosts and click the **“Bulk Set Public IP”** button on th
 
 In the pop-up dialog, choose your public IP allocation type.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-37.png)
+![dr-setupdr-block-network-bulk-set-public-ip](./images/dr-setupdr-block-network-bulk-set-public-ip.png)
 
 **Bulk Set Fixed MAC**
 
@@ -479,7 +529,7 @@ Select the desired hosts and click the **“Bulk Set Security Group”** button 
 
 In the pop-up dialog, select your security group.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-39.png)
+![dr-setupdr-block-network-bulk-set-security-group](./images/dr-setupdr-block-network-bulk-set-security-group.png)
 
 ##### **Multiple NlCs**
 
@@ -491,13 +541,13 @@ When a host has multiple network interface cards (NICs) that require specific co
 
 After selecting the host, click the "+ Add NIC" button on the page to add a new NIC, ensuring it corresponds to the source NIC.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-88.png)
+![dr-setupdr-block-network-multiple-nics](./images/dr-setupdr-block-network-multiple-nics.png)
 
 **Modify**
 
 After selecting the corresponding NIC, you can configure settings such as network, subnet, private IP, public IP, specified MAC address, and security group for each NIC individually based on actual requirements.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-89.png)
+![dr-setupdr-block-network-multiple-nics-modify](./images/dr-setupdr-block-network-multiple-nics-modify.png)
 
 
 **Network Configuration** complete, click **“Next”** to start **Advanced Configuration.**
@@ -506,7 +556,9 @@ After selecting the corresponding NIC, you can configure settings such as networ
 
 This section supports user-defined script execution and driver adaptation settings, to meet personalized needs and hardware compatibility tuning in complex environments (the script section can be left blank).
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-40.png)
+![dr-setupdr-block-advanced](./images/dr-setupdr-block-advanced.png)
+
+![dr-setupdr-block-advanced-configuration](./images/dr-setupdr-block-advanced-configuration.png)
 
 ##### **Custom Pre & Post Scripts**
 
@@ -577,7 +629,7 @@ Before using association policies, you need to create the corresponding policies
 
 Policies can be configured for individual hosts or batch-associated for multiple hosts via the page.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-41.png)
+![](./images/hostdisasterrecovery-hostdisasterrecovery-54.png)
 
 ##### **Bulk Associate Policy**
 
@@ -593,13 +645,13 @@ After **Associating Policy**, click **"Confirm"**, Before configuring the policy
 
 Select "Object Storage" as the storage type, then configure the block storage steps according to the selected information to complete the disaster recovery setup.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-43.png)
+![dr-setupdr-object-platform](./images/dr-setupdr-object-platform.png)
 
 #### **Specify DR Platform**
 
 Assign the backup host to use the "Object Storage" type for backup and select the configuration parameters.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-44.png)
+![dr-setupdr-object-platform](./images/dr-setupdr-object-platform.png)
 
 ##### **Supported Storage Types**
 
@@ -644,7 +696,7 @@ You need to configure computing resource parameters for the recovered hosts, inc
 
 Select the virtual machines to be disaster backed up. You can manually select in batches by paging through, configure CPU, OS type, or use the page buttons for batch settings. After choosing the suitable boot method, complete the configuration.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-45.png)
+![dr-setupdr-object-computing](./images/dr-setupdr-object-computing.png)
 
 If a preset template with matching resource types exists, the system will auto-match; otherwise, manual selection is required.
 
@@ -656,7 +708,9 @@ Select the desired hosts, then click the **“Bulk Set Flavor”** button on the
 
 In the popup dialog, select and confirm based on the preset configuration information.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-46.png)
+![dr-setupdr-object-computing-bulk-set-flavor](./images/dr-setupdr-object-computing-bulk-set-flavor.png)
+
+![dr-setupdr-object-computing-bulk-auto-match-flavor](./images/dr-setupdr-object-computing-bulk-auto-match-flavor.png)
 
 ##### **Bulk Set OS Type**
 
@@ -666,7 +720,7 @@ Select the desired hosts, then click the **“Bulk Set OS Type”** button on th
 
 In the popup dialog, select your host operating system type.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-47.png)
+![dr-setupdr-object-computing-bulk-set-os-type](./images/dr-setupdr-object-computing-bulk-set-os-type.png)
 
 After completing **Computing Resource Configuration**, click **“Next”** to start **Specify Volume Type**.
 
@@ -676,7 +730,7 @@ Users need to specify the disk type (volume type) on the target cloud platform f
 
 Set the disk type for the virtual machine disks to be disaster backed up.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-48.png)
+![dr-setupdr-object-volume](./images/dr-setupdr-object-volume.png)
 
 You can select the system volume type from the dropdown list. Actual options depend on cloud provider support. Below is a sample configuration for reference:
 
@@ -698,7 +752,7 @@ The system supports both IPv4 and IPv6 network environments. Please select the a
 
 After selection, configure related parameters such as private IP, public IP, security groups, and MAC address based on actual needs.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-49.png)
+![dr-setupdr-object-network](./images/dr-setupdr-object-network.png)
 
 * Configuration Description
 
@@ -722,7 +776,7 @@ Select the desired hosts, then click the **“Bulk Set Private IP”** button on
 
 In the pop-up dialog box, choose your private IP allocation type.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-50.png)
+![dr-setupdr-object-network-bulk-set-private-ip](./images/dr-setupdr-object-network-bulk-set-private-ip.png)
 
 **Bulk Set Public IP**
 
@@ -730,7 +784,7 @@ Select the desired hosts, then click the **“Bulk Set Public IP”** button on 
 
 In the pop-up dialog box, choose your public IP allocation type.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-51.png)
+![dr-setupdr-object-network-bulk-set-public-ip](./images/dr-setupdr-object-network-bulk-set-public-ip.png)
 
 **Bulk Set Security Group**
 
@@ -738,7 +792,7 @@ Select the desired hosts, then click the **“Bulk Set Security Group”** butto
 
 In the pop-up dialog box, choose your security group.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-52.png)
+![dr-setupdr-object-network-bulk-set-security-group](./images/dr-setupdr-object-network-bulk-set-security-group.png)
 
 Once **Network Configuration** is complete, click **“Next”** to proceed to **Advanced Configuration**.
 
@@ -746,7 +800,9 @@ Once **Network Configuration** is complete, click **“Next”** to proceed to *
 
 This section supports user-defined script execution and driver adaptation settings, allowing for personalized adjustments and hardware compatibility tuning in complex environments. (The script field can be left blank.)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-53.png)
+![dr-setupdr-object-advanced](./images/dr-setupdr-object-advanced.png)
+
+![dr-setupdr-object-advanced-configuration](./images/dr-setupdr-object-advanced-configuration.png)
 
 ##### **Custom Pre & Post Scripts**
 
@@ -807,7 +863,7 @@ After completing **Policy Association**, click **"Confirm"**. The backup host wi
 
 Log in to the console, click the top navigation **"Disaster Recovery"**, then click **"Host DR"** on the left panel. Click **"Start DR"**, select one or multiple hosts, and click **"Sync Now"** to initiate the disaster recovery process.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-56.png)
+![dr-startdr-main](./images/dr-startdr-main.png)
 
 > Note: Data must be synced before proceeding to the next steps.
 
@@ -815,7 +871,7 @@ Log in to the console, click the top navigation **"Disaster Recovery"**, then cl
 
 After selecting the hosts for disaster recovery, click **"Sync Now"** on the page to start the initial full data sync.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-57.png)
+![dr-startdr-sync](./images/dr-startdr-sync.png)
 
 Click **"Confirm"** to begin syncing.
 
@@ -848,13 +904,11 @@ Hosts not in syncing state or already completed sync do not support the stop syn
 
 Select the disaster recovery host, click “Drill”, choose a recovery point, and restore the DR host to the target environment with one click.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-62.png)
+![dr-startdr-main](./images/dr-startdr-main.png)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-63.png)
+![dr-startdr-drill](./images/dr-startdr-drill.png)
 
 The system will automatically create or start the target instance according to the pre-configured resource orchestration (compute, storage, network, etc.). Once the instance is started, you can log in to the target platform to verify configurations and perform service testing.
-
-![](./images/hostdisasterrecovery-hostdisasterrecovery-64.png)
 
 After recovery is complete, check whether application services, databases, and load balancing are functioning normally.
 
@@ -862,13 +916,11 @@ After recovery is complete, check whether application services, databases, and l
 
 Select the **"Takeover"** function for the business host, choose the recovery snapshot point as needed, and click Confirm.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-65.png)
+![dr-startdr-main](./images/dr-startdr-main.png)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-66.png)
+![dr-startdr-takeover](./images/dr-startdr-takeover.png)
 
 The system will automatically create or start the target instance based on the pre-configured resource orchestration (compute, storage, network, etc.). Once the instance has started, you can log in to the target platform to verify the configuration and take over business operations.
-
-![](./images/hostdisasterrecovery-hostdisasterrecovery-67.png)
 
 At this point, the disaster recovery process for the host is complete. After services are started, check whether the database version, application service configurations, and dependent services (e.g., cache, message queues) are functioning properly.
 
@@ -886,7 +938,9 @@ Block Storage: [Click to View](#specify-dr-platform)
 
 Object Storage: [Click to View](#specify-dr-platform-1)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-68.png)
+![dr-startdr-action-hover-specify-dr-platform](./images/dr-startdr-action-hover-specify-dr-platform.png)
+
+![dr-startdr-action-click-specify-dr-platform](./images/dr-startdr-action-click-specify-dr-platform.png)
 
 #### **Specify Cloud Sync Gateway**
 
@@ -896,7 +950,7 @@ Click **"Specify Cloud Sync Gateway"** to modify the DR platform. For details, r
 
 Block Storage: [Click to View](#specify-cloud-sync-gateway)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-69.png)
+![dr-startdr-action-dropdown](./images/dr-startdr-action-dropdown.png)
 
 #### **Specify Volume Type**
 
@@ -908,7 +962,9 @@ Block Storage: [Click to View](#specify-volume-type)
 
 Object Storage: [Click to View](#specify-volume-type-1)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-70.png)
+![dr-startdr-action-hover-specify-volume-type](./images/dr-startdr-action-hover-specify-volume-type.png)
+
+![dr-startdr-action-click-specify-volume-type](./images/dr-startdr-action-click-specify-volume-type.png)
 
 #### **Computing Resource Configuration**
 
@@ -920,7 +976,9 @@ Block Storage: [Click to View](#computing-resource-configuration)
 
 Object Storage: [Click to View](#computing-resource-configuration-1)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-71.png)
+![dr-startdr-action-hover-computing-resource-configuration](./images/dr-startdr-action-hover-computing-resource-configuration.png)
+
+![dr-startdr-action-click-computing-resource-configuration](./images/dr-startdr-action-click-computing-resource-configuration.png)
 
 #### **Network Configuration**
 
@@ -932,7 +990,9 @@ Block Storage: [Click to View](#network-configuration)
 
 Object Storage: [Click to View](#network-configuration-1)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-72.png)
+![dr-startdr-action-hover-network-configuration](./images/dr-startdr-action-hover-network-configuration.png)
+
+![dr-startdr-action-click-network-configuration](./images/dr-startdr-action-click-network-configuration.png)
 
 #### **Advanced Configuration**
 
@@ -942,7 +1002,9 @@ Block Storage: [Click to View](#advanced-configuration)
 
 Object Storage: [Click to View](#advanced-configuration-1)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-73.png)
+![dr-startdr-action-hover-advanced-configuration](./images/dr-startdr-action-hover-advanced-configuration.png)
+
+![dr-startdr-action-click-advanced-configuration](./images/dr-startdr-action-click-advanced-configuration.png)
 
 #### **Associate Policy**
 
@@ -952,44 +1014,98 @@ Block Storage: [Click to View](#associate-policy)
 
 Object Storage: [Click to View](#associate-policy-1)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-74.png)
+![dr-startdr-action-hover-associate-policy](./images/dr-startdr-action-hover-associate-policy.png)
+
+![dr-startdr-action-click-associate-policy](./images/dr-startdr-action-click-associate-policy.png)
 
 #### **Source Sync Settings**
 
 Click **"Source Sync Settings"** to configure source-side parameters for backup hosts.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-75.png)
+![dr-startdr-action-hover-source-sync-settings](./images/dr-startdr-action-hover-source-sync-settings.png)
 
 ##### **General Settings**
 
-| Parameter        | Options       | Description                                                                 |
-|------------------|---------------|-----------------------------------------------------------------------------|
-| Maximum CPU Usage    | 1–100          | Sets the maximum CPU usage on the source host during backup. Avoid setting it too low to ensure backup efficiency. |
-| Encryption       | Yes / No       | Applies only to Object Storage mode. Note: Enabling this option increases CPU usage for encryption processing. |
-| Compression      | Yes / No       | Applies only to Object Storage mode. Note: Enabling this option increases CPU usage for compression processing. |
+> This configuration applies to Linux Agent, Windows Agent, and Agentless modes. The interface layout or configuration location may vary slightly across different modes. Please refer to the actual interface.
 
-##### **Agentless Mode**
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
 
-| Parameter             | Options           | Description                                                                                                                                                                                                                     |
-|------------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| VMware Quiesced Snapshot | Yes / No          | Currently supported only on VMware hosts with VMware Tools installed.                                                                                                                     |
-| Read Threads          | Auto / Custom     | Sets the number of read threads per host. "Auto" adjusts the threads based on the sync proxy's resources and the number of disks on the host (1–10). Use "Custom" (1–100) if needed; it's recommended to keep under 30. For 10Gb+ networks, increasing proxy resources (e.g., 8 cores, 16 GB RAM or more) allows setting to 50 or 100 for better performance. |
-| Writing Thread         | Auto / Custom     | Sets the number of write threads per host. "Auto" adjusts based on proxy resources and disk count (1–10). Use "Custom" (1–100) if needed; recommended max is 30. For 10Gb+ networks, increase proxy resources before setting to 50 or 100. |
-| Concurrent Multi-Disk Read and Write  | Yes / No          | Determines whether all disks on a host are synchronized concurrently.                                                                                                                     |
+| Parameter                        | Setting   | Description                                                                                                                                                         |
+| -------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Maximum CPU Usage (%)            | 30        | Limits the maximum CPU percentage available for backup tasks. Range: **1–100**. A higher value increases backup speed but also increases the impact on source host services. It is recommended to keep the default value unless business load requires adjustment. |
+| Available Memory (MB)            | 1024      | Remaining available system memory. Valid range: **700–1024** MB. Adjust based on the available memory of the source host.                                           |
+| Encryption                       | Yes       | When enabled, transmitted data is encrypted to improve data security, but it will consume additional CPU resources and may slightly reduce backup speed.            |
+| Compression                      | No        | When enabled, the system applies block-level compression to reduce the amount of data being transmitted, thereby enhancing transmission efficiency. In incremental transfers, certain operating system characteristics can cause the volume of transmitted data to exceed the actual amount written, due to the need for maintaining data continuity and integrity. The effectiveness of compression varies depending on the type of data being handled, and the system dynamically adjusts its approach accordingly. Users can enable or disable this feature based on their specific needs, ensuring optimal performance across different scenarios. |
+| Check Dup Data              | Automatic | Detects and skips duplicate data to reduce data transfer volume.<br>**Automatic**: The system automatically determines whether to perform deduplication check based on actual conditions (recommended).<br>**Enable**: Deduplication check is performed on every sync.<br>**Disable**: Deduplication check is not performed on any sync. |
+| Volume Reserved Space (%)        | 3         | Windows Agent volume availability ratio. Range: **0–99**. Sets the percentage of volume space to reserve on the source host.                                        |
+| Snapshot Creation Timeout (sec)  | 600       | The maximum allowed wait time for snapshot creation, in seconds. Range: **600–86400**. If snapshot creation is not completed within this time, the task will be marked as failed. For environments where snapshot creation takes longer, increase this value as needed. |
 
-##### **Sync Retry Settings**
+##### **Sync Thread Settings**
 
-| Parameter   | Options     | Description                                                                                   |
-|-------------|-------------|-----------------------------------------------------------------------------------------------|
-| Retry on Failure       | Yes / No     | If enabled, the system will retry automatically after a failure (e.g., network issues).       |
-| Retry Count | 1–100        | Maximum number of retry attempts.                                                             |
-| Retry Interval    | 1–3600       | Wait time (in seconds) between retries.                                                       |
+> This configuration applies to Agentless mode. The interface layout or configuration location may vary slightly across different modes. Please refer to the actual interface.
+
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
+
+| Parameter                    | Setting              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ---------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| VMware Quiesce Snapshot      | No                   | Only applicable to VMware virtual machines with **VMware Tools** installed. When enabled, file system consistency is ensured to the greatest extent during snapshot creation. It is recommended to enable based on business needs.                                                                                                                                                                                                                                                              |
+| Reading Thread               | Automatic Adaptation | Sets the number of data reading threads for a single host. The default uses **Automatic Adaptation** mode, where the system adjusts the thread count (1–10) based on the Sync Proxy's resource configuration and the number of disks on the host to be synchronized, without manual configuration.<br>Use the **Custom** option (1–100) only when further optimization is needed. It is recommended to keep the thread count within 30. In 10 Gigabit or higher network environments, after increasing the Sync Proxy's resource configuration (e.g., 8 cores, 16 GB memory or above), increasing the thread count to 50 or 100 can improve synchronization performance. |
+| Writing Thread               | Automatic Adaptation | Sets the number of data writing threads for a single host. The default uses **Automatic Adaptation** mode, where the system adjusts the thread count (1–10) based on the Sync Proxy's resource configuration and the number of disks on the host to be synchronized, without manual configuration.<br>Use the **Custom** option (1–100) only when further optimization is needed. It is recommended to keep the thread count within 30. In 10 Gigabit or higher network environments, after increasing the Sync Proxy's resource configuration (e.g., 8 cores, 16 GB memory or above), increasing the thread count to 50 or 100 can improve synchronization performance. |
+| Concurrent Multi-Disk Read and Write | Yes        | Controls whether multiple disks are read and written simultaneously during synchronization. When enabled, multiple disks can be synchronized concurrently to improve efficiency. When disabled, disks are synchronized sequentially, suitable for scenarios with strict system resource constraints. |
+
+##### Sync Retry Settings
+
+> This configuration applies to Linux Agent, Windows Agent, and Agentless modes. The interface layout or configuration location may vary slightly across different modes. Please refer to the actual interface.
+
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
+
+| Parameter        | Setting | Description                                                                                                                                                       |
+| ---------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Retry on Failure | Yes     | When enabled, the system will automatically attempt to reconnect and resume synchronization if an exception (e.g., network error) causes synchronization failure. If disabled, the system will not retry after a failure. |
+| Retry Count      | 3       | Sets the maximum number of retry attempts. Range: **1–100**. If the connection is still not restored after reaching the maximum retry count, the sync task will be marked as failed. |
+| Retry Interval   | 60      | Sets the wait time between retries, in **seconds**. Range: **1–3600**. Increasing the interval helps wait for network recovery and avoid frequent retries.  |
+
+##### Sync Thread Settings
+
+> This configuration applies to Linux Agent and Windows Agent modes. The interface layout or configuration location may vary slightly across different modes. Please refer to the actual interface.
+
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
+
+| Parameter                                  | Setting | Description                                                                                                                                               |
+| ------------------------------------------ | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Block Storage Single-Disk Sync Thread Count | 2      | Sets the number of sync threads for a single disk in block storage mode. Range: **1–64**. Increasing the thread count can improve sync performance but will consume more system resources. Adjust based on host resource configuration. |
+| Object Storage Sync Thread Count           | 4       | Sets the number of sync threads in object storage mode. Range: **1–16**. Increasing the thread count can improve sync performance but will consume more system resources. Adjust based on host resource configuration. |
+
+##### Object Upload Settings
+
+> This configuration applies to Linux Agent mode. The interface layout or configuration location may vary slightly across different modes. Please refer to the actual interface.
+
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
+
+| Parameter                  | Setting | Description                                                                                                                                                       |
+| -------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Connection Timeout         | 120     | Sets the maximum wait time for establishing a connection when uploading objects, in **seconds**. Range: **1–1800**. If the connection is not established within this time, it will be marked as timed out. |
+| Whether to Send MD5 Hash            | Yes     | When enabled, an MD5 digest is sent during object upload to verify data integrity, helping detect data corruption that may occur during transmission.              |
+| Whether to Perform Segmental SHA256 Checksum | No  | When enabled, the system performs SHA256 verification on each data segment during multipart upload, further enhancing data integrity verification. However, it may increase computational overhead. |
+
+##### Volume VSS Storage Settings
+
+> This configuration applies to Windows Agent mode. The interface layout or configuration location may vary slightly across different modes. Please refer to the actual interface.
+
+![dr-startdr-action-click-source-sync-settings](./images/dr-startdr-action-click-source-sync-settings.png)
+
+| Parameter                    | Setting               | Description                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ---------------------------- | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| General Roll Proportion    | 10                    | Sets the default percentage of disk space available for VSS snapshot storage, in **%**. Range: **5–100**. When no specific VSS storage space is configured for a volume, this setting is used.                                                                                                                                                                                                       |
+| Special Roll Storage      | `VSS_SPEC_MAX_C=d:10` | Sets the VSS snapshot storage location and capacity for specific volumes.\<br\>**Single volume example:** `VSS_SPEC_MAX_C=d:10` means storing the VSS snapshot of volume **C** on volume **D** with **10 GB** allocated.\<br\>**Multiple volume example:** `VSS_SPEC_MAX_C=d:10;VSS_SPEC_MAX_E=f:10`, separated by semicolons (`;`). **Leave blank by default unless special requirements exist.** |
+| VSS Shadow Creation Timeout  | 300                   | Sets the maximum wait time for creating a VSS shadow copy, in **seconds**. The value must be greater than or equal to **60**. If the shadow copy is not created within this time, the operation will be marked as failed.                                                                                                                                                                                         |
+| Raw Sync Volume         | F                     | Specifies partitions to be synchronized using raw data mode without VSS snapshots. Enter the drive letter. Multiple drive letters are separated by commas (`,`), e.g., `F` or `E,F`. Applicable to partitions that do not require VSS consistency snapshots. **Leave blank by default unless special requirements exist.**                                                                                 |
 
 #### **Source Disk Sync Settings**
 
 Click **“Source Disk Sync Settings”** to configure the source disk synchronization policy. When multiple disks are present, you can choose whether each disk participates in the synchronization individually.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-90.png)
+![dr-startdr-action-dropdown](./images/dr-startdr-action-dropdown.png)
 
 #### **Modify Sync Proxy**
 
@@ -997,31 +1113,33 @@ Click **“Source Disk Sync Settings”** to configure the source disk synchroni
 
 Click **"Modify Sync Proxy"** to update the source sync proxy.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-76.png)
+![dr-startdr-action-hover-modify-sync-proxy](./images/dr-startdr-action-hover-modify-sync-proxy.png)
+
+![dr-startdr-action-click-modify-sync-proxy](./images/dr-startdr-action-click-modify-sync-proxy.png)
 
 #### **Attach Tag**
 
 Click **"Attach Tag"** to open a sidebar where you can assign tags to the selected host.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-77.png)
+![dr-startdr-action-hover-attach-tag](./images/dr-startdr-action-hover-attach-tag.png)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-78.png)
+![dr-startdr-action-click-attach-tag](./images/dr-startdr-action-click-attach-tag.png)
 
 #### **Detach Tag**
 
 Click **"Detach Tag"** to open a sidebar where you can remove tags from the selected host.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-79.png)
+![dr-startdr-action-hover-detach-tag](./images/dr-startdr-action-hover-detach-tag.png)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-80.png)
+![dr-startdr-action-click-detach-tag](./images/dr-startdr-action-click-detach-tag.png)
 
 #### **Reports**
 
 Click **"Report"** to open a dialog where you can choose the type of report to export for the selected host. See more: (Report Export)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-81.png)
+![dr-startdr-action-hover-export-report](./images/dr-startdr-action-hover-export-report.png)
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-82.png)
+![dr-startdr-action-click-export-report](./images/dr-startdr-action-click-export-report.png)
 
 #### **Deregister Host**
 
@@ -1032,17 +1150,17 @@ Click **"Report"** to open a dialog where you can choose the type of report to e
 
 Click the **"Deregister Host"** button to unregister the host. In the pop-up dialog, check the notice and confirm to proceed.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-83.png)
+![dr-startdr-action-hover-deregister-host](./images/dr-startdr-action-hover-deregister-host.png)
 
 For hosts that have lost connection, force registration is required.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-84.png)
+![dr-startdr-action-click-deregister-host](./images/dr-startdr-action-click-deregister-host.png)
 
 #### **Clean Up Validation Host**
 
 Click the **“Clean Up Validation Host”** button. This operation only cleans up hosts that have started in the cloud. Enter “Yes” in the popup dialog and click confirm to clean up the cloud validation hosts.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-85.png)
+![dr-startdr-action-dropdown](./images/dr-startdr-action-dropdown.png)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-86.png)
 
@@ -1052,4 +1170,4 @@ Click the **“Clean Up Validation Host”** button. This operation only cleans 
 
 Click the **“Force Abort”** button to immediately stop the current task.
 
-![](./images/hostdisasterrecovery-hostdisasterrecovery-87.png)
+![dr-startdr-action-dropdown](./images/dr-startdr-action-dropdown.png)
