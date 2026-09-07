@@ -207,7 +207,7 @@ export const enSidebar = sidebar({
         'presales/deep-in-aws-agentless-mode',
         'product-training/multi-tenant-design.md',
         'product-training/failback.md',
-        'presales/saas-platform-security-overview.md',
+        'presales/saas-platform-security-overview',
       ],
     },
     {
